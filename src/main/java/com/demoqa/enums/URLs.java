@@ -1,9 +1,9 @@
 package com.demoqa.enums;
 
 public enum  URLs {
-    BASE_URL ("https://demoqa.com/links");
+    BASE_URL ("https://demoqa.com/");
 
-    private String value;
+    private final String value;
 
     URLs (String value) {
         this.value = value;
