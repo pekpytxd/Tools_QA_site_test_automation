@@ -10,7 +10,7 @@ public class ElementsPageBL {
         elementsPage = new ElementsPage();
     }
 
-    private TextBoxPageBL clickTextBoxPage() {
+    public TextBoxPageBL clickTextBoxPage() {
         elementsPage.getTextBoxButtonAndText().click();
         return new TextBoxPageBL();
     }

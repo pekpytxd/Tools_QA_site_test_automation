@@ -10,9 +10,9 @@ public class MainPageBL {
         mainPage = new MainPage();
     }
 
-    public TasksPageBL getTasksPage() {
+    public ElementsPageBL getElementsPage() {
         clickOnElementsButton();
-        return new TasksPageBL();
+        return new ElementsPageBL();
     }
 
     private void clickOnElementsButton() {

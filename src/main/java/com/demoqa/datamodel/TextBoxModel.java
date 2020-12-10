@@ -3,11 +3,11 @@ package com.demoqa.datamodel;
 public class TextBoxModel {
 
     private String email;
-    private String password;
+    private String fullName;
     private String currentAddress;
     private String permanentAddress;
 
-    public static TextBoxModel.Builder getBuilder(String value) {
+    public static TextBoxModel.Builder getBuilder() {
         return new TextBoxModel().new Builder();
     }
 
@@ -17,8 +17,8 @@ public class TextBoxModel {
             return this;
         }
 
-        public TextBoxModel.Builder password(String value) {
-            password = value;
+        public TextBoxModel.Builder fullName(String value) {
+            fullName = value;
             return this;
         }
 
@@ -37,8 +37,8 @@ public class TextBoxModel {
         }
     }
 
-    public String getPassword() {
-        return password;
+    public String getFullName() {
+        return fullName;
     }
 
     public String getEmail() {

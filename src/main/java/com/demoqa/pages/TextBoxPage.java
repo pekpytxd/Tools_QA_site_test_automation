@@ -17,6 +17,20 @@ public class TextBoxPage extends BasePage {
     @FindBy(id = "permanentAddress")
     private WebElement inputPermanentAddressField;
 
+    @FindBy(css = ".col-md-12")
+    private WebElement inputData;
+
+    @FindBy(css = "#submit")
+    private WebElement submitButton;
+
+    public WebElement getSubmitButton() {
+        return submitButton;
+    }
+
+    public WebElement getInputData() {
+        return inputData;
+    }
+
     public WebElement getInputCurrentAddressField() {
         return inputCurrentAddressField;
     }
