@@ -15,4 +15,9 @@ public class ElementsPageBL {
         return new TextBoxPageBL();
     }
 
+    public CheckBoxPageBL clickCheckBoxPage() {
+        elementsPage.getCheckBoxButtonAndText().click();
+        return new CheckBoxPageBL();
+    }
+
 }

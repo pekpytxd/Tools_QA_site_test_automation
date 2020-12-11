@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import static com.demoqa.enums.URLs.BASE_URL;
 
-public class ElementsTest extends BaseTest {
+public class TextBoxTest extends BaseTest {
 
     @Test
     public void inputDataTest() {
