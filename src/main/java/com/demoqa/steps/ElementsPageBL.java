@@ -20,4 +20,9 @@ public class ElementsPageBL {
         return new CheckBoxPageBL();
     }
 
+    public RadioButtonPageBL clickRadioButtonPage() {
+        elementsPage.getRadioButtonsButtonAndText().click();
+        return new RadioButtonPageBL();
+    }
+
 }
