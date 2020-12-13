@@ -12,13 +12,13 @@ public class CheckBoxPage extends BasePage{
     @FindBy(css = ".rct-icon.rct-icon-expand-close")
     private WebElement homeToogle;
 
-    @FindBy(css = ".rct-node-collapsed:nth-child(1)")
+    @FindBy(css = ".rct-icon-expand-close:nth-child(1)")
     private WebElement desktopToogle;
 
-    @FindBy(css = ".rct-node-collapsed:nth-child(2)")
+    @FindBy(css = "li:nth-child(2)  button")
     private WebElement documentsToogle;
 
-    @FindBy(css = ".rct-node-collapsed:nth-child(3)")
+    @FindBy(css = "li:nth-child(3)  button")
     private WebElement downloadsToogle;
 
     @FindBy(css = "#tree-node-desktop + span")
@@ -49,7 +49,7 @@ public class CheckBoxPage extends BasePage{
     private WebElement angularCheckBox;
 
     @FindBy(xpath = "//span[contains(text(), 'Veu')]")
-    private WebElement vueCheckBox;
+    private WebElement veuCheckBox;
 
     @FindBy(xpath = "//span[contains(text(), 'Public')]")
     private WebElement publicCheckBox;
@@ -71,6 +71,20 @@ public class CheckBoxPage extends BasePage{
 
     @FindBy(id = "result")
     private WebElement displayResult;
+
+    @FindBy(css = "li li.rct-node-expanded li:nth-child(1)  button")
+    private WebElement workSpaceToogle;
+
+    @FindBy(css = "li li.rct-node-expanded li:nth-child(2)  button")
+    private WebElement officeToogle;
+
+    public WebElement getOfficeToogle() {
+        return officeToogle;
+    }
+
+    public WebElement getWorkSpaceToogle() {
+        return workSpaceToogle;
+    }
 
     public WebElement getDisplayResult() {
         wait.until(ExpectedConditions.visibilityOf(displayResult));
@@ -149,8 +163,8 @@ public class CheckBoxPage extends BasePage{
         return reactCheckBox;
     }
 
-    public WebElement getVueCheckBox() {
-        return vueCheckBox;
+    public WebElement getVeuCheckBox() {
+        return veuCheckBox;
     }
 
     public WebElement getWordFileCheckBox() {
